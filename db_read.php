@@ -1,15 +1,8 @@
 <?php
-$sql = "SELECT * FROM memberships";
+$sql = "SELECT id, firstname, lastname, email, membership_type FROM memberships";
 $result = mysqli_query($conn, $sql);
 
-echo "<table style='width:100%;'>";
-echo "<tr style='text-align:left'>";
-echo "<th>ID</th>";
-echo "<th>First Name</th>";
-echo "<th>Last Name</th>";
-echo "<th>Email Address</th>";
-echo "<th>Membership Type</th>";
-echo "</tr>";
+
 
 if (mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_assoc($result)) {
@@ -23,7 +16,7 @@ if (mysqli_num_rows($result) > 0) {
     }
   } else {
     echo "<tr>";
-    echo "<td colspan=5>0 results</td>";
+    echo "<td colspan=6>0 results</td>";
     echo "</tr>";
   }
 ?>

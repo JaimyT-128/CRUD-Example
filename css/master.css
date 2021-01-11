@@ -6,3 +6,8 @@ td, th{
 table{
     border-collapse: collapse;
 }
+.input_create{
+    width: 99%;
+    margin: 0;
+    padding: 0;
+}
