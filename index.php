@@ -8,6 +8,7 @@ include "db_connect.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golfclub management</title>
     <link rel="stylesheet" href="css/master.css">
+    <script src="https://kit.fontawesome.com/0237e04b0d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     

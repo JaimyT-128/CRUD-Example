@@ -11,3 +11,11 @@ table{
     margin: 0;
     padding: 0;
 }
+.fa-edit{
+    color: orange;
+    text-decoration: none;
+}
+.fa-times{
+    color: darkred;
+    text-decoration: none;
+}

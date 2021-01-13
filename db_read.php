@@ -12,6 +12,7 @@ if (mysqli_num_rows($result) > 0) {
         echo "<td>" . $row['lastname'] . "</td>";
         echo "<td>" . $row['email'] . "</td>";
         echo "<td>" . $row['membership_type'] . "</td>";
+        echo "<td><a href=\"edit.php?id=" . $row['id'] ."\" title=\"Edit\" style=\"margin-right:5px\" class=\"fas fa-edit\"></a><a href=\"delete.php?id=" . $row['id'] ."\" title=\"Delete\" class=\"fas fa-times\"></a></td>";
         echo "</tr>";
     }
   } else {
